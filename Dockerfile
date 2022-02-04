@@ -5,8 +5,8 @@ RUN yum install -y httpd \
  unzip 
 ADD https://www.free-css.com/free-css-templates/page275/triple-p /var/www/html/
 WORKDIR /var/www/html
-RUN unzip photogenic.zip
-RUN cp -rvf photogenic/* .
-RUN rm -rf photogenic photogenic.zip 
+RUN unzip Triple P Free Website Template - Free-CSS.com.zip
+RUN cp -rvf Triple P Free Website Template - Free-CSS.com/* .
+RUN rm -rf Triple P Free Website Template - Free-CSS.com.zip 
 CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
 EXPOSE 80
